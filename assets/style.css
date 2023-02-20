@@ -1,0 +1,10 @@
+#startbtn{
+    color: white;
+    background-color: plum;
+    display: flex;
+}
+
+#startbtn:hover{
+    color:silver;
+    background-color: palevioletred;
+}
