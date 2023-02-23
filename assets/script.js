@@ -1,5 +1,5 @@
 var startbutton = document.getElementById('startbtn'); 
-var rightanswers = document.querySelectorAll('.rightanswer');
+var rightanswers = document.querySelectorAll('rightanswer');
 var rightanswersAll = Array.from(rightanswers); 
 var score = 0;
 var scoreEl = document.querySelector('article');
@@ -34,8 +34,7 @@ function countdown(){
             questionthree.style.display = "none";
             questionfour.style.display = "none";
             questionfive.style.display = "none";
-            var playername = prompt("What is your name?")
-            scoreEl.textContent = "Congratulations, " + playername + " your score is " + score + "!";
+            scoreEl.textContent = "Timeout! Loser!";
         }
     }, 1000);
 }
