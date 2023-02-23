@@ -1,8 +1,8 @@
 var startbutton = document.getElementById('startbtn'); 
-var rightanswers = document.querySelectorAll('rightanswer');
+var rightanswers = document.querySelectorAll('.rightanswer');
 var rightanswersAll = Array.from(rightanswers); 
 var score = 0;
-var scoreEl = document.querySelector('article');
+var scoreEl = document.getElementById('score');
 var questionone = document.getElementById('questionone');
 var questiontwo = document.getElementById('questiontwo');
 var questionthree = document.getElementById('questionthree');
@@ -13,6 +13,8 @@ var questiontwoanswers = document.getElementById('twoanswers');
 var questionthreeanswers = document.getElementById('threeanswers');
 var questionfouranswers = document.getElementById('fouranswers');
 var questionfiveanswers = document.getElementById('fiveanswers');
+
+console.log(rightanswersAll);
 
 function countdown(){
     var timerEl = document.getElementById('time');
@@ -34,11 +36,10 @@ function countdown(){
             questionthree.style.display = "none";
             questionfour.style.display = "none";
             questionfive.style.display = "none";
-            scoreEl.textContent = "Timeout! Loser!";
         }
     }, 1000);
 }
-startbutton.addEventListener("click", function(event) {
+startbutton.addEventListener("click", function() {
     startbutton.style.visibility = "hidden";
     questionone.style.display = "block";
     countdown();
@@ -97,13 +98,13 @@ questionfiveanswers.addEventListener("click", function(event){
     if(rightanswersAll.includes(event.target)){
         questionfive.style.display = "none";
         score ++;
-        var playername = prompt("What is your name?")
-        scoreEl.textContent = "Congratulations, " + playername + " your score is " + score + "!";
+        var player = prompt("What is your name?")
+        scoreEl.textContent = "Congratulations, " + player + ", your score is " + score + "!";
      }
     else{
         questionfive.style.display = "none";
-        var playername = prompt("What is your name?")
-        scoreEl.textContent = "Congratulations, " + playername + " your score is " + score + "!";
+        var player = prompt("What is your name?")
+        scoreEl.textContent = "Congratulations, " + player + ", your score is " + score + "!";
      }
 })
 
