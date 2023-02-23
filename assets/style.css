@@ -9,6 +9,16 @@
     background-color: palevioletred;
 }
 
+h3{
+    color: white;
+    background-color: plum;
+    display: flex;   
+}
+
+h3:hover{
+    color:silver;
+    background-color: palevioletred;
+}
 section{
     display:none; 
 }
