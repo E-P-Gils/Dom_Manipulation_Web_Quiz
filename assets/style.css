@@ -2,6 +2,16 @@
     color: white;
     background-color: plum;
     display: flex;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 30px 40px;
+    justify-content: center;
+    position: fixed;
+    bottom: 350px; 
+    right: 600px; 
 }
 
 #startbtn:hover{
@@ -13,6 +23,20 @@ h3{
     color: white;
     background-color: plum;
     display: flex;   
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 30px 40px;
+}
+
+h2{
+    display: flex;   
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 0 auto;   
+    max-width: 500px;
+    padding: 30px 40px;
 }
 
 h3:hover{
